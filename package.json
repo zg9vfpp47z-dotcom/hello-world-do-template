@@ -15,7 +15,10 @@
 		"preview_image_url": "https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/fc7b4b62-442b-4769-641b-ad4422d74300/public"
 	},
 	"devDependencies": {
+		"@types/node": "^22.0.0",
+		"@vitest/ui": "^3.0.0",
 		"typescript": "5.9.3",
+		"vitest": "^3.0.0",
 		"wrangler": "4.136.1"
 	},
 	"private": true,
@@ -24,6 +27,9 @@
 		"check": "tsc && wrangler deploy --dry-run",
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
-		"start": "wrangler dev"
+		"start": "wrangler dev",
+		"test": "vitest",
+		"test:run": "vitest run",
+		"test:ui": "vitest --ui"
 	}
 }
